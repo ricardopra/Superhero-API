@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(./src/planetas.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-y: auto;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 34px;
+    text-align: center;
+    color: white;
+}
+
+.scoreboard {
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px; 
+    font-size: 24px; 
+    text-align: center; 
+    color: black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.icon-container {
+    position: fixed; 
+    left: 20px; 
+    top: 20px;     
+    z-index: 1000;
+}
+
+.icon-container-right {
+    position: fixed; 
+    right: 20px; 
+    top: 20px; 
+    z-index: 1000; 
+}
+
+.small-icon {
+    width: 150px; 
+    height: auto; 
+    border-radius: 3px; 
+}
+
+.scoreboard p {
+    font-size: 18px;
+    margin: 0 10px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    transition: border 0.3s ease;
+    color: white;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.stats p {
+    margin: 10px 0; 
+    font-size: 20px; 
+}
+
+.card h2 {
+    font-size: 28px; 
+}
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+    width: 100%;
+    height: 30px; 
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.4s ease;
+    font-size: 14px; 
+}
+
+
+@keyframes blink {
+    0%, 100% {
+        border-color: green;
+    }
+    50% {
+        border-color: transparent; 
+    }
+}
+
+.winner {
+    border: 10px solid green;
+    animation: blink 1s infinite; 
+}
+
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .icon-container{
+        display: none;
+    }
+
+    .icon-container-right{
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

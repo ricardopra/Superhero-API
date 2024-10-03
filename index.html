@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo de Heróis</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="icon-container">
+        <img src="./src/marvel.png" alt="Logo" class="small-icon">
+    </div>
+
+    <div class="icon-container-right">
+        <img src="./src/trunfo.jpeg" alt="Logo" class="small-icon">
+    </div>
+
+    <div id="timer">Próxima comparação em: <span id="countdown">5</span> segundos</div>
+
+    <div class="container">
+        <div id="hero1" class="card">
+            <h3>Player I</h3>
+            <h2 id="name1">Hero 1</h2>
+            <img id="image1" src="" alt="Hero 1 Image">
+            <div class="stats">
+                <p>Inteligência: <span id="intelligence1">0</span></p>
+                <div class="progress">
+                    <div id="intelligence-bar1" class="progress-bar"></div>
+                </div>
+                <p>Força: <span id="strength1">0</span></p>
+                <div class="progress">
+                    <div id="strength-bar1" class="progress-bar"></div>
+                </div>
+                <p>Velocidade: <span id="speed1">0</span></p>
+                <div class="progress">
+                    <div id="speed-bar1" class="progress-bar"></div>
+                </div>
+                <p>Durabilidade: <span id="durability1">0</span></p>
+                <div class="progress">
+                    <div id="durability-bar1" class="progress-bar"></div>
+                </div>
+                <p>Poder: <span id="power1">0</span></p>
+                <div class="progress">
+                    <div id="power-bar1" class="progress-bar"></div>
+                </div>
+                <p>Combate: <span id="combat1">0</span></p>
+                <div class="progress">
+                    <div id="combat-bar1" class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h1>Jogo do Super Trunfo de Heróis</h1>
+            <div class="scoreboard">
+                <p>Player 1 : <span id="score1">0</span></p><br>
+                <p>Player 2 : <span id="score2">0</span></p>
+            </div>
+            <button onclick="resetGame()">Zerar Jogo</button>
+        </div>
+
+        <div id="hero2" class="card">
+            <h3>Player II</h3>
+            <h2 id="name2">Hero 2</h2>
+            <img id="image2" src="" alt="Hero 2 Image">
+            <div class="stats">
+                <p>Inteligência: <span id="intelligence2">0</span></p>
+                <div class="progress">
+                    <div id="intelligence-bar2" class="progress-bar"></div>
+                </div>
+                <p>Força: <span id="strength2">0</span></p>
+                <div class="progress">
+                    <div id="strength-bar2" class="progress-bar"></div>
+                </div>
+                <p>Velocidade: <span id="speed2">0</span></p>
+                <div class="progress">
+                    <div id="speed-bar2" class="progress-bar"></div>
+                </div>
+                <p>Durabilidade: <span id="durability2">0</span></p>
+                <div class="progress">
+                    <div id="durability-bar2" class="progress-bar"></div>
+                </div>
+                <p>Poder: <span id="power2">0</span></p>
+                <div class="progress">
+                    <div id="power-bar2" class="progress-bar"></div>
+                </div>
+                <p>Combate: <span id="combat2">0</span></p>
+                <div class="progress">
+                    <div id="combat-bar2" class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
